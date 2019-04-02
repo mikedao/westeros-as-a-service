@@ -1,0 +1,31 @@
+ <h1 id="api-key-usage">API Key Usage</h1>
+
+ <center> <img src = "https://media.giphy.com/media/720g7C1jz13wI/giphy.gif"></center>
+<p>You will be given your own, unique API key. The key:</p>
+
+<ul>
+  <li>Uniquely identifies you.</li>
+  <li>Gives you access to Hogwarts as a Service</li>
+  <li>Should be kept private and should not be shared.</li>
+</ul>
+<h3 id="http-header">Authentication</h3>
+
+<p>Pass the API key into the <code>x_api_key</code> header:</p>
+
+<div class="highlight"><pre class="highlight shell"><code>curl <span class="nt">-H</span> <span class="s1">'x_api_key: DEMO_KEY'</span> <span class="s1">'https://developer.nrel.gov/api/alt-fuel-stations/v1.json?limit=1'</span>
+</code></pre></div>
+
+
+<h2> Endpoints </h2>
+
+<b> /api/v1/house/ </b>
+
+<li> Listing of houses by id </li>
+<br><br>
+<b> /api/v1/house/:id </b>
+
+<li> Listing of students that are in house that has an id of id </li>
+
+
+
+
