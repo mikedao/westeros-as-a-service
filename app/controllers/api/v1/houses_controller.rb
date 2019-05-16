@@ -18,6 +18,6 @@ class Api::V1::HousesController < ApplicationController
   private
 
   def valid_key?
-    request.env["HTTP_X_API_KEY"] == ENV["X-API-KEY"]
+    request.env["HTTP_X_API_KEY"] == ENV["key"]
   end
 end
