@@ -9,7 +9,7 @@ class Api::V1::HousesController < ApplicationController
 
   def show
     if valid_key?
-      render json: House.find(params[:id]).members, each_serializer: StudentSerializer
+      render json: House.find(params[:id]).members, each_serializer: MemberSerializer
     else
       render body: "Unauthorized", status: 401
     end
